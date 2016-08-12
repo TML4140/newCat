@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>location</title>
+	<style>
+		div{
+			width:500px;
+			height:500px;
+			border:1px solid #eee;
+		}
+	</style>
+</head>
+<body>
+	<button onclick='getLocation()'>获取当前地址</button><br/>
+	<div></div>
+</body>
+<script>
+	function getLocation(){
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(function(position){
+				console.log('get');
+			},function(err){
+				console.log(err);
+			});
+		}
+	}
+</script>
+</html>
