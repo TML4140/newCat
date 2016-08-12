@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<style>
+		body{
+			padding:0;
+			margin:0;
+			height:100%;
+			padding-left:300px;
+		}
+		canvas{
+			background:#ff0000;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<canvas width='800' height='450' >
+	</canvas>
+</body>
+	<script>
+	var r=20;
+		var c=document.querySelector('canvas');
+			ctx=c.getContext('2d');
+		    ctx.strokeStyle='#A6E22E';
+		    ctx.fillStyle='yellow';
+		    ctx.lineWidth=2;
+
+		  ctx.beginPath();
+			ctx.moveTo(55,180);
+			ctx.lineTo(190,180);
+			ctx.lineTo(80,265);
+			ctx.lineTo(125,130);
+			ctx.lineTo(170,265);
+			ctx.lineTo(55,180);
+		    ctx.fill();
+	</script>
+</html>
